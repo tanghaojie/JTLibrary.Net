@@ -1,4 +1,4 @@
-﻿namespace JT.Common {
+﻿namespace JT.UI.Common {
     public class DisplayValueMember<T> {
         public DisplayValueMember(string display, T value) {
             Display = display;

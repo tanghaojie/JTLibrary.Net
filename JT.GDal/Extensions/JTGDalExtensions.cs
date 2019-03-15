@@ -12,7 +12,11 @@ namespace JT.GDal {
             }
             return fields.ToArray();
         }
-        //only for 1.11+
+        /// <summary>
+        /// only for gdal 1.11+
+        /// </summary>
+        /// <param name="layer"></param>
+        /// <returns></returns>
         public static GeomFieldDefn[] GeomFields(this OSGeo.OGR.Layer layer) {
             var defn = layer.GetLayerDefn();
             var count = defn.GetGeomFieldCount();
